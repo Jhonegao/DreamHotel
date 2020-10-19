@@ -78,8 +78,8 @@
             this.txtPassword.Size = new System.Drawing.Size(350, 19);
             this.txtPassword.TabIndex = 5;
             this.txtPassword.Text = "SENHA";
-            this.txtPassword.Enter += new System.EventHandler(this.txtPassword_Enter);
-            this.txtPassword.Leave += new System.EventHandler(this.txtPassword_Leave);
+           // this.txtPassword.Enter += new System.EventHandler(this.txtPassword_Enter);
+          //  this.txtPassword.Leave += new System.EventHandler(this.txtPassword_Leave);
             // 
             // panel3
             // 
@@ -112,8 +112,8 @@
             this.txtUser.Size = new System.Drawing.Size(350, 19);
             this.txtUser.TabIndex = 4;
             this.txtUser.Text = "USUARIO";
-            this.txtUser.Enter += new System.EventHandler(this.textUser_Enter);
-            this.txtUser.Leave += new System.EventHandler(this.txtUser_Leave);
+           // this.txtUser.Enter += new System.EventHandler(this.textUser_Enter);
+           // this.txtUser.Leave += new System.EventHandler(this.txtUser_Leave);
             // 
             // panel2
             // 

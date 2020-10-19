@@ -15,7 +15,8 @@ namespace PresentationViews
     {
         public LoginForm()
         {
-            InitializeComponent();            
+            InitializeComponent();
+            AppMethodToTxtBox(this);
         }
         #region MoveForm
         [DllImport("user32.DLL", EntryPoint = "ReleaseCapture")]
@@ -24,6 +25,23 @@ namespace PresentationViews
         private extern static void SendMessage(System.IntPtr hwnd, int wmsg, int wparam, int lparam);
         #endregion
         #region Methods
+        private void Login_Load(object sender, EventArgs e)
+        {
+            this.ActiveControl = lbLogin;
+        }
+        public void AppMethodToTxtBox(Form form)
+        {
+            for (int i = 0; i < form.Controls.Count; i++)
+            {
+                Control control = form.Controls[i];
+                if (control is TextBox)
+                {
+                    TextBox txt = (TextBox)control;
+                    txt.Enter += Txt_Enter;
+                    txt.Leave += Txt_Leave;
+                }
+            }
+        }
         public void MoveForm()
         {
             ReleaseCapture();
@@ -55,27 +73,25 @@ namespace PresentationViews
                 txtBox.ForeColor = Color.AliceBlue;
             }
         }
-        private void Login_Load(object sender, EventArgs e)
-        {
-            this.ActiveControl = lbLogin;
-        }
         #endregion
-        #region Components
-        private void textUser_Enter(object sender, EventArgs e)
+        #region EventsForm
+        private void Txt_Leave(object sender, EventArgs e)
         {
-            TextBoxChanges(txtUser, txtUser.Text , false);
+            TextBox txt = (TextBox)sender;
+            TextBoxChanges(txt, txt.Text, txt.Name.Equals("txtUser"));
         }
-        private void txtUser_Leave(object sender, EventArgs e)
+        private void Txt_Enter(object sender, EventArgs e)
         {
-            TextBoxChanges(txtUser, txtUser.Text , true);
+            TextBox txt = (TextBox)sender;
+            TextBoxChanges(txt, txt.Text, !txt.Name.Equals("txtUser"));
         }
-        private void txtPassword_Enter(object sender, EventArgs e)
+        private void Login_MouseDown(object sender, MouseEventArgs e)
         {
-            TextBoxChanges(txtPassword, txtPassword.Text, true);            
+            MoveForm();
         }
-        private void txtPassword_Leave(object sender, EventArgs e)
+        private void panelLeft_MouseDown(object sender, MouseEventArgs e)
         {
-            TextBoxChanges(txtPassword, txtPassword.Text, false);
+            MoveForm();
         }
         private void btnExit_Click(object sender, EventArgs e)
         {
@@ -86,14 +102,5 @@ namespace PresentationViews
             this.WindowState = FormWindowState.Minimized;
         }
         #endregion
-
-        private void Login_MouseDown(object sender, MouseEventArgs e)
-        {
-            MoveForm();
-        }
-        private void panelLeft_MouseDown(object sender, MouseEventArgs e)
-        {
-            MoveForm();
-        }
     }
 }
