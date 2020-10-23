@@ -1,0 +1,10 @@
+C:\Users\entra21\source\repos\DreamHotel\PresentationViews\bin\Debug\PresentationViews.exe.config
+C:\Users\entra21\source\repos\DreamHotel\PresentationViews\bin\Debug\PresentationViews.exe
+C:\Users\entra21\source\repos\DreamHotel\PresentationViews\bin\Debug\PresentationViews.pdb
+C:\Users\entra21\source\repos\DreamHotel\PresentationViews\obj\Debug\PV.csprojAssemblyReference.cache
+C:\Users\entra21\source\repos\DreamHotel\PresentationViews\obj\Debug\PresentationViews.LoginForm.resources
+C:\Users\entra21\source\repos\DreamHotel\PresentationViews\obj\Debug\PresentationViews.Properties.Resources.resources
+C:\Users\entra21\source\repos\DreamHotel\PresentationViews\obj\Debug\PresentationViews.TelaTesteCadastroCliente.resources
+C:\Users\entra21\source\repos\DreamHotel\PresentationViews\obj\Debug\PV.csproj.GenerateResource.cache
+C:\Users\entra21\source\repos\DreamHotel\PresentationViews\obj\Debug\PresentationViews.exe
+C:\Users\entra21\source\repos\DreamHotel\PresentationViews\obj\Debug\PresentationViews.pdb

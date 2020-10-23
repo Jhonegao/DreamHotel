@@ -18,7 +18,7 @@ namespace DAL
         public static void OpenConnection()
         {
             //pegando connection string pelo metodo static.
-            string ConnectionSring = ConnectionHelper.GetConectionString();
+            string ConnectionSring = ConnectionHelper.GetConnectionString();
             connection.ConnectionString = ConnectionSring;
             connection.Open();
         }

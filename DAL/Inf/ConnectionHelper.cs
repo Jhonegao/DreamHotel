@@ -8,9 +8,9 @@ namespace DAL.Inf
 {
     internal class ConnectionHelper
     {
-        public static string GetConectionString()
+        public static string GetConnectionString()
         {
-            return @"Data Source = (LocalDB)\MSSQLLocalDB; AttachDbFilename = C:\Users\Jhon\source\repos\DreamHotel\dbt\dbHotel.mdf; Integrated Security = True; Connect Timeout = 30";
+            return @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\entra21\source\repos\DreamHotel\dbt\dbHotel.mdf;Integrated Security=True;Connect Timeout=30";
         }
     }
 }

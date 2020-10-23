@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30309.148
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PresentationViews", "PresentationViews\PresentationViews.csproj", "{845D5C1C-7BD8-47B9-8D14-3F2339B2B8BD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PV", "PresentationViews\PV.csproj", "{845D5C1C-7BD8-47B9-8D14-3F2339B2B8BD}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{83976A95-524F-4C70-9861-BABD419757CA}"
 EndProject

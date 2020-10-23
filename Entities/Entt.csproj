@@ -41,7 +41,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Address.cs" />
+    <Compile Include="Categories.cs" />
+    <Compile Include="Customers.cs" />
+    <Compile Include="Entry_Item.cs" />
+    <Compile Include="Product.cs" />
+    <Compile Include="ProductEntry.cs" />
+    <Compile Include="Product_Sale.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Provider.cs" />
+    <Compile Include="Provider_has_Product.cs" />
+    <Compile Include="Reservation.cs" />
+    <Compile Include="Room.cs" />
+    <Compile Include="RoomCheckIn.cs" />
+    <Compile Include="RoomCheckOut.cs" />
+    <Compile Include="Room_Service.cs" />
+    <Compile Include="Sale_Item.cs" />
+    <Compile Include="User.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
