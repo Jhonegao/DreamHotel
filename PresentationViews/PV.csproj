@@ -101,5 +101,11 @@
   <ItemGroup>
     <None Include="Pics\AuxHelp\CloseIcon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Entities\Entt.csproj">
+      <Project>{C62D0890-DF3E-45CA-AF69-6EDA712EF5B9}</Project>
+      <Name>Entt</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -15,6 +15,7 @@ namespace Entities
         public string Email { get; set; }
         public List<string> Telefones  { get; set; }
         public int EnderecoId { get; set; }
+        public Address Endereco { get; set; }
         public DateTime Data_Cadastro { get; set; }
         public bool IsAdmin { get; set; }
         public string Senha { get; set; }
