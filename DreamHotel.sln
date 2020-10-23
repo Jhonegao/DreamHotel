@@ -7,11 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PresentationViews", "Presen
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BLL", "BLL\BLL.csproj", "{83976A95-524F-4C70-9861-BABD419757CA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entities", "Entities\Entities.csproj", "{C62D0890-DF3E-45CA-AF69-6EDA712EF5B9}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entt", "Entities\Entt.csproj", "{C62D0890-DF3E-45CA-AF69-6EDA712EF5B9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{E45B2CD2-76F6-46EE-AEBF-105FB5414ECC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Commmon", "Commmon\Commmon.csproj", "{5E94644D-3FB6-4227-8BF0-B2406D836E09}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cmm", "Commmon\Cmm.csproj", "{5E94644D-3FB6-4227-8BF0-B2406D836E09}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
