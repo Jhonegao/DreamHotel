@@ -1,0 +1,11 @@
+C:\Users\entra21\source\repos\DreamHotel\Commmon\bin\Debug\Commmon.dll
+C:\Users\entra21\source\repos\DreamHotel\Commmon\bin\Debug\Commmon.pdb
+C:\Users\entra21\source\repos\DreamHotel\Commmon\obj\Debug\Cmm.csprojAssemblyReference.cache
+C:\Users\entra21\source\repos\DreamHotel\Commmon\obj\Debug\Commmon.dll
+C:\Users\entra21\source\repos\DreamHotel\Commmon\obj\Debug\Commmon.pdb
+C:\repositories\DreamHotel\Cmm\bin\Debug\Commmon.dll
+C:\repositories\DreamHotel\Cmm\bin\Debug\Commmon.pdb
+C:\repositories\DreamHotel\Cmm\obj\Debug\Cmm.csprojAssemblyReference.cache
+C:\repositories\DreamHotel\Cmm\obj\Debug\Cmm.csproj.CoreCompileInputs.cache
+C:\repositories\DreamHotel\Cmm\obj\Debug\Commmon.dll
+C:\repositories\DreamHotel\Cmm\obj\Debug\Commmon.pdb

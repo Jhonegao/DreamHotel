@@ -1,4 +1,4 @@
-﻿using Common.Enums;
+﻿//using Common.Enums;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -12,7 +12,7 @@ namespace Entities
         public int ID { get; set; }
         public string Nome { get; set; }
         public string Bloco { get; set; }
-        public TipoEnum Tipo { get; set; }
+       // public TipoEnum Tipo { get; set; }
         public double Valor_Diaria { get; set; }
         public DateTime Data_Cadastro { get; set; }
         public bool Reservado { get; set; }

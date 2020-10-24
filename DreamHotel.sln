@@ -11,7 +11,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Entt", "Entities\Entt.cspro
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL", "DAL\DAL.csproj", "{E45B2CD2-76F6-46EE-AEBF-105FB5414ECC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cmm", "Commmon\Cmm.csproj", "{5E94644D-3FB6-4227-8BF0-B2406D836E09}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Cmm", "Cmm\Cmm.csproj", "{5E94644D-3FB6-4227-8BF0-B2406D836E09}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

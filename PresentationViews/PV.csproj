@@ -33,6 +33,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Correios.CEP">
+      <HintPath>..\..\..\GitEntra21\CadastroPessoaForm\libs\Correios.CEP.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
@@ -102,6 +105,10 @@
     <None Include="Pics\AuxHelp\CloseIcon.png" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{83976A95-524F-4C70-9861-BABD419757CA}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Entities\Entt.csproj">
       <Project>{C62D0890-DF3E-45CA-AF69-6EDA712EF5B9}</Project>
       <Name>Entt</Name>

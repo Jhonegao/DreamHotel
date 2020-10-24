@@ -1,4 +1,4 @@
-﻿using Commmon;
+﻿using Cmm;
 using DAL.Inf;
 using Entities;
 using System;
@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace DAL
 {
-    class AddressDAO
+    public class AddressDAO
     {
         public Response Insert(Address address)
         {

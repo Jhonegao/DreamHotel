@@ -1,1 +1,13 @@
 C:\Users\entra21\source\repos\DreamHotel\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\repositories\DreamHotel\DAL\bin\Debug\DAL.dll
+C:\repositories\DreamHotel\DAL\bin\Debug\DAL.pdb
+C:\repositories\DreamHotel\DAL\bin\Debug\Commmon.dll
+C:\repositories\DreamHotel\DAL\bin\Debug\Correios.CEP.dll
+C:\repositories\DreamHotel\DAL\bin\Debug\Entities.dll
+C:\repositories\DreamHotel\DAL\bin\Debug\Commmon.pdb
+C:\repositories\DreamHotel\DAL\bin\Debug\Entities.pdb
+C:\repositories\DreamHotel\DAL\obj\Debug\DAL.csprojAssemblyReference.cache
+C:\repositories\DreamHotel\DAL\obj\Debug\DAL.csproj.CoreCompileInputs.cache
+C:\repositories\DreamHotel\DAL\obj\Debug\DAL.csproj.CopyComplete
+C:\repositories\DreamHotel\DAL\obj\Debug\DAL.dll
+C:\repositories\DreamHotel\DAL\obj\Debug\DAL.pdb

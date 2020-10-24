@@ -3,3 +3,16 @@ C:\Users\entra21\source\repos\DreamHotel\BLL\bin\Debug\BLL.pdb
 C:\Users\entra21\source\repos\DreamHotel\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
 C:\Users\entra21\source\repos\DreamHotel\BLL\obj\Debug\BLL.dll
 C:\Users\entra21\source\repos\DreamHotel\BLL\obj\Debug\BLL.pdb
+C:\repositories\DreamHotel\BLL\bin\Debug\BLL.dll
+C:\repositories\DreamHotel\BLL\bin\Debug\BLL.pdb
+C:\repositories\DreamHotel\BLL\bin\Debug\Commmon.dll
+C:\repositories\DreamHotel\BLL\bin\Debug\DAL.dll
+C:\repositories\DreamHotel\BLL\bin\Debug\Entities.dll
+C:\repositories\DreamHotel\BLL\bin\Debug\Commmon.pdb
+C:\repositories\DreamHotel\BLL\bin\Debug\DAL.pdb
+C:\repositories\DreamHotel\BLL\bin\Debug\Entities.pdb
+C:\repositories\DreamHotel\BLL\obj\Debug\BLL.csprojAssemblyReference.cache
+C:\repositories\DreamHotel\BLL\obj\Debug\BLL.csproj.CoreCompileInputs.cache
+C:\repositories\DreamHotel\BLL\obj\Debug\BLL.csproj.CopyComplete
+C:\repositories\DreamHotel\BLL\obj\Debug\BLL.dll
+C:\repositories\DreamHotel\BLL\obj\Debug\BLL.pdb
