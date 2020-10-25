@@ -1,5 +1,5 @@
-﻿using Cmm;
-using Cmm.Auxiliar;
+﻿using BLL.Checkers;
+using Cmm;
 using DAL;
 using Entities;
 using System;
@@ -35,7 +35,7 @@ namespace BLL
         public override Response Validate(Address item)
         {
 
-            if (IsAnyPropertyNull.IsAnyNullOrEmpty(item))
+            if (CheckAnyProperty.IsAnyNullOrEmpty(item))
             {
                 AddError("Todos os campos do endereco devem ser informados");
             }

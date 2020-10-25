@@ -10,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace DAL
 {
-    class UserDAO
+    public class UserDAO
     {
         public Response Insert(User user)
         {
@@ -18,14 +18,13 @@ namespace DAL
             SqlConnection connection = new SqlConnection();
             connection.ConnectionString = ConnectionHelper.GetConnectionString();
             SqlCommand command = new SqlCommand();
-            command.CommandText =
-                "INSERT INTO Users (NOME,CPF,RG,EMAIL,TELFONE1,TELEFONE2,ENDERECOID,ISADMIN,SENHA) VALUES (NOME,CPF,RG,EMAIL,TELFONE1,TELEFONE2,ENDERECOID,ISADMIN,SENHA)";
+            command.CommandText ="INSERT INTO Users (NOME, CPF, RG, EMAIL, TELEFONE1, TELEFONE2, ENDERECOID, SENHA, ISADMIN) VALUES (@NOME, @CPF, @RG, @EMAIL, @TELEFONE1, @TELEFONE2, @ENDERECOID, @SENHA, @ISADMIN)";
             command.Parameters.AddWithValue("@NOME", user.Nome);
             command.Parameters.AddWithValue("@CPF", user.Cpf);
             command.Parameters.AddWithValue("@RG", user.Rg);
             command.Parameters.AddWithValue("@EMAIL", user.Email);
-            command.Parameters.AddWithValue("@TELFONE1", user.Telefones[0]);
-            command.Parameters.AddWithValue("@TELFONE2", user.Telefones[1]);
+            command.Parameters.AddWithValue("@TELEFONE1", user.Telefone);
+            command.Parameters.AddWithValue("@TELEFONE2", user.Telefone_Aux);
             command.Parameters.AddWithValue("@ENDERECOID", user.EnderecoId);
             command.Parameters.AddWithValue("@ISADMIN", user.IsAdmin);
             command.Parameters.AddWithValue("@SENHA", user.Senha);
@@ -34,7 +33,6 @@ namespace DAL
 
             try
             {
-
                 connection.Open();
                 command.ExecuteNonQuery();
                 dbResponse.Success = true;

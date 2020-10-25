@@ -41,7 +41,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Auxiliar\IsAnyPropertyNull.cs" />
     <Compile Include="Auxiliar\LengthAttribute.cs" />
     <Compile Include="QueryResponse.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

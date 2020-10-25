@@ -18,8 +18,7 @@ namespace DAL
             SqlConnection connection = new SqlConnection();
             connection.ConnectionString = ConnectionHelper.GetConnectionString();
             SqlCommand command = new SqlCommand();
-            command.CommandText =
-                "INSERT INTO ADDRESSES (NUMERO,RUA,BAIRRO,CIDADE,UF,CEP,PAIS) VALUES (@NUMERO, @RUA, @BAIRRO, @CIDADE, @UF, @CEP, @PAIS)";
+            command.CommandText ="INSERT INTO ADDRESSES (NUMERO,RUA,BAIRRO,CIDADE,UF,CEP,PAIS) VALUES (@NUMERO, @RUA, @BAIRRO, @CIDADE, @UF, @CEP, @PAIS)";
             command.Parameters.AddWithValue("@NUMERO", address.Numero);
             command.Parameters.AddWithValue("@RUA", address.Rua);
             command.Parameters.AddWithValue("@BAIRRO", address.Bairro);
@@ -85,6 +84,8 @@ namespace DAL
             }
             return dbResponse;
         }
+    }
+}
         //public Response GetById(int id)
         //{
         //    SingleResponse response = new SingleResponse();
@@ -136,8 +137,6 @@ namespace DAL
         //    }
         //}
 
-    }
-}
 
 //public ClassNamePlaceholder()
 //{
