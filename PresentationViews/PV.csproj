@@ -109,6 +109,10 @@
       <Project>{83976A95-524F-4C70-9861-BABD419757CA}</Project>
       <Name>BLL</Name>
     </ProjectReference>
+    <ProjectReference Include="..\Cmm\Cmm.csproj">
+      <Project>{5E94644D-3FB6-4227-8BF0-B2406D836E09}</Project>
+      <Name>Cmm</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Entities\Entt.csproj">
       <Project>{C62D0890-DF3E-45CA-AF69-6EDA712EF5B9}</Project>
       <Name>Entt</Name>

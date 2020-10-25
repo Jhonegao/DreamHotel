@@ -12,6 +12,7 @@ using System.Windows.Forms;
 using Correios.CEP;
 using System.Reflection;
 using BLL;
+using Cmm;
 
 namespace PresentationViews
 {
@@ -23,7 +24,7 @@ namespace PresentationViews
         }
         private void button1_Click(object sender, EventArgs e)
         {
-
+            AddressBLL addressBLL = new AddressBLL();
             cepConsulta ceepAddress = correiosCEP.GetAddress("89041003");
             Address address = new Address();
             address.Pais = "Brasil";
@@ -31,21 +32,11 @@ namespace PresentationViews
             address.CEP = ceepAddress.Cep;
             address.Bairro = ceepAddress.Bairro;
             address.Cidade = ceepAddress.Cidade;
-            address.UF = "s";
-            address.Numero = "a";
-            CheckAttributeLength.AttributeLength<Address>(address);
-
-            //foreach (var prop in typeof(Address).GetProperties())
-            //{
-            //    var fieldLength = ((MyLengthAttribute)prop.GetCustomAttribute(typeof(MyLengthAttribute)))?.FieldLength;
-
-            //    var value = prop.GetValue(address)?.ToString();
-
-            //    if (value != null && value.Length > fieldLength)
-            //    {
-            //        Console.WriteLine($"{prop.Name} has an invalid value \"{value}\" with length of {value.Length} when max length is {fieldLength}.");
-            //    }
-            //}
+            address.UF = ceepAddress.UF;
+            address.Numero = "1248";
+            //CheckAttributeLength.AttributeLength<Address>(address);
+            Response response = addressBLL.Insert(address);
+            MessageBox.Show(response.Message);
             //User user = new User();
             //user.Nome = "Joana";
             //user.Cpf = "12345604952";

@@ -19,18 +19,20 @@ namespace DAL
             connection.ConnectionString = ConnectionHelper.GetConnectionString();
             SqlCommand command = new SqlCommand();
             command.CommandText =
-                "INSERT INTO ADDRESSES (NUMERO,RUA,BAIRRO,CIDADE,UF,CEP);select scope_identity()";
+                "INSERT INTO ADDRESSES (NUMERO,RUA,BAIRRO,CIDADE,UF,CEP,PAIS) VALUES (@NUMERO, @RUA, @BAIRRO, @CIDADE, @UF, @CEP, @PAIS)";
             command.Parameters.AddWithValue("@NUMERO", address.Numero);
             command.Parameters.AddWithValue("@RUA", address.Rua);
             command.Parameters.AddWithValue("@BAIRRO", address.Bairro);
             command.Parameters.AddWithValue("@CIDADE", address.Cidade);
             command.Parameters.AddWithValue("@UF", address.UF);
             command.Parameters.AddWithValue("@CEP", address.CEP);
+            command.Parameters.AddWithValue("@PAIS", address.Pais);
             command.Connection = connection;
             try
             {
                 connection.Open();
-                int idGerado = Convert.ToInt32(command.ExecuteScalar());
+                command.ExecuteNonQuery();
+                //int idGerado = Convert.ToInt32(command.ExecuteScalar());
                 dbResponse.Success = true;
                 dbResponse.Message = "Endereco cadastrado com sucesso!";
             }
@@ -54,16 +56,19 @@ namespace DAL
             connection.ConnectionString = ConnectionHelper.GetConnectionString();
             SqlCommand command = new SqlCommand();
 
-            command.CommandText = "UPDATE Addresses SET NUMERO = @NUMERO, RUA = @RUA BAIRRO = @BAIRRO, CIDADE = @CIDADE, UF = UF WHERE ID = @ID";
+            command.CommandText = "UPDATE Addresses SET NUMERO = @NUMERO, RUA = @RUA BAIRRO = @BAIRRO, CIDADE = @CIDADE, UF = UF, CEP = @CEP, PAIS = @PAIS WHERE ID = @ID";
             command.Parameters.AddWithValue("@NUMERO", address.Numero);
             command.Parameters.AddWithValue("@RUA", address.Rua);
             command.Parameters.AddWithValue("@BAIRRO", address.Bairro);
             command.Parameters.AddWithValue("@CIDADE", address.Cidade);
             command.Parameters.AddWithValue("@UF", address.UF);
+            command.Parameters.AddWithValue("@CEP", address.CEP);
+            command.Parameters.AddWithValue("@PAIS", address.Pais);
             try
             {
                 connection.Open();
-                int idGerado = Convert.ToInt32(command.ExecuteScalar());
+                command.ExecuteNonQuery();
+                //int idGerado = Convert.ToInt32(command.ExecuteScalar());
                 dbResponse.Success = true;
                 dbResponse.Message = "Endereco alterado com sucesso!";
             }

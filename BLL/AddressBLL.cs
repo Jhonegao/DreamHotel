@@ -11,7 +11,7 @@ using System.Threading.Tasks;
 namespace BLL
 {
     
-    class AddressBLL : BaseValidator<Address>
+    public class AddressBLL : BaseValidator<Address>
     {
         private AddressDAO addressDAO = new AddressDAO();
         public Response Insert(Address item)

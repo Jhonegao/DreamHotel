@@ -25,7 +25,7 @@ namespace BLL
                 {
                    ErrorLength.Add($"O numero máximo de caracteres do campo {prop.Name} é de {fieldLength}.");
                 }
-                else if(value != null && value.Length > minFieldLength) {
+                else if(value != null && value.Length < minFieldLength) {
                    ErrorLength.Add($"O numero minimo de caracteres do campo {prop.Name} é de {minFieldLength}.");
                 }
             }
